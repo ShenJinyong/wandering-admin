@@ -13,7 +13,7 @@ export default function indexRouter() {
         <Route path='/' element={
           // localStorage.getItem("toekn")?<Admin/>:<Navigate to="/login" replace />
           true?
-          <Admin></Admin>:<Navigate to="login" replace />
+          <Admin/>:<Navigate to='login' replace />
         }>
           <Route path='home' element={<div>home</div>}></Route>
           <Route path='user' element={<div>user</div>}></Route>
