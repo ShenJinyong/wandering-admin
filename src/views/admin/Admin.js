@@ -1,8 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-import SideMenu from '../../components/admin/SideMenu'
-import TopHeader from '../../components/admin/TopHeader'
+import SideMenu from '../../components/admin/SideMenu/SideMenu.js'
+import TopHeader from '../../components/admin/TopHeader/TopHeader.js'
 
 import { Layout } from 'antd'
 import './Admin.css'

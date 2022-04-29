@@ -8,12 +8,14 @@ import {
   UploadOutlined,
 } from '@ant-design/icons'
 
+import './SideMenu.css'
+
 const { Sider } = Layout
 
 export default function SideMenu() {
   return (
     <Sider trigger={null} collapsible >
-          <div className="logo" />
+          <div className="logo">流浪所后台管理系统</div>
           <Menu
             theme="dark"
             mode="inline"
