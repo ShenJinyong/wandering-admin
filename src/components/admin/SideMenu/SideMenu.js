@@ -10,9 +10,13 @@ import {
 
 import './SideMenu.css'
 
+// import { useNavigate } from 'react-router-dom'
+
 const { Sider } = Layout
 
-export default function SideMenu() {
+export default function SideMenu(props) {
+
+  // let navigate = useNavigate();
 
   const menuList = [
     {
@@ -67,6 +71,9 @@ export default function SideMenu() {
             mode="inline"
             defaultSelectedKeys={['1']}
             items={menuList}
+            onClick={()=>{
+              console.log(menuList)
+            }}
           />
         </Sider>
   )
