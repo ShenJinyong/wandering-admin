@@ -15,6 +15,7 @@ export default function indexRouter() {
           true?
           <Admin/>:<Navigate to='login' replace />
         }>
+          <Route index element = {<Navigate to='home' />}></Route>
           <Route path='home' element={<div>home</div>}></Route>
           <Route path='user' element={<div>user</div>}></Route>
           <Route path='role' element={<div>role</div>}></Route>
